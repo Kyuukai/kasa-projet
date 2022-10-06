@@ -1,11 +1,16 @@
-import Home from "../styles/Home.sass"
+import React from 'react';
+import Banner from '../components/Banner';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
-function App() {
+const Home = () => {
   return (
-    <div className="kasa-banner">
-
+    <div>
+      <Header />
+      <Banner />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App;
+export default Home;
