@@ -4,8 +4,9 @@ import Header from '../components/Header';
 
 const Accomodation = () => {
     return (
-        <div>
+        <div className="home__cards">
             <Header />
+
             <Footer />
         </div>
     );

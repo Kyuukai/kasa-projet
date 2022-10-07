@@ -16,17 +16,12 @@ body {
     cursor: default;
     font-family: 'Montserrat', sans-serif;
     color: $text-color-red;
-    margin: 2.5rem 22rem;
+    margin: 2rem 18rem;
 }
 
 a {
     text-decoration: none;
     color: currentColor;
-}
-
-::selection {
-    background-color: white;
-    color: $text-color-red;
 }
 
 .active {
