@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Banner = () => {
+const Banner = (props) => {
     return (
         <div className='banner-homepage'>
-            <img src="./BANNER_IMG.png" alt="Bannière du Site" />
-            <h3>Chez vous, partout et ailleurs</h3>
+            <img src={props.imgUrl} alt="Bannière du Site" />
+            <h3>{props.textMessage}</h3>
         </div>
     );
 };

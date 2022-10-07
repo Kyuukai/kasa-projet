@@ -1,0 +1,18 @@
+.dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ff6060;
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+
+    &__title {
+        color: white;
+    }
+
+    &__arrow {
+        color: white;
+    }
+}
