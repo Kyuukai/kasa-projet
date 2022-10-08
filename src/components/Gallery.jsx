@@ -3,7 +3,7 @@ import Card from './Card';
 
 const Gallery = (props) => {
     return (
-        <div className='gallery'>
+        <div className='gallery container'>
             <Card />
             <Card />
             <Card />

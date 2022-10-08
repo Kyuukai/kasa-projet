@@ -1,18 +1,21 @@
-.dropdown {
+.collapse {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: #ff6060;
     padding: 15px;
+    margin-bottom: 3rem !important;
     border-radius: 10px;
-    width: 80%;
+    width: 60%;
     margin: auto;
 
     &__title {
         color: white;
     }
 
-    &__arrow {
+    &__icon {
+        font-size: 1.5rem;
         color: white;
     }
 }
