@@ -1,13 +1,4 @@
 .collapse {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ff6060;
-    padding: 15px;
-    margin-bottom: 3rem !important;
-    border-radius: 10px;
-    border: 0;
     width: 60%;
 
     &__title {
@@ -27,6 +18,20 @@
         justify-content: center;
         border-radius: 10px;
         transition-duration: 1s;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
+        background-color: #ff6060;
+        background-color: #ff6060;
+        padding: 15px;
+        border-radius: 10px;
+        border: 0;
     }
 }
