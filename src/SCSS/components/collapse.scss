@@ -7,8 +7,8 @@
     padding: 15px;
     margin-bottom: 3rem !important;
     border-radius: 10px;
+    border: 0;
     width: 60%;
-    margin: auto;
 
     &__title {
         color: white;
@@ -17,5 +17,15 @@
     &__icon {
         font-size: 1.5rem;
         color: white;
+    }
+
+    &__content {
+        color: #ff6060;
+        display: flex;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 10px;
+        transition-duration: 1s;
+        width: 100%;
     }
 }

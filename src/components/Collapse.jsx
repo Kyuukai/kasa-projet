@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'
+
 
 const Collapse = (props) => {
+    const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className='collapse container'>
-            <h3 className='collapse__title'>{props.textMessage}</h3>
-            <FontAwesomeIcon icon={faAngleDown} className='collapse__icon' />
+        <div>
+            <button className='collapse container' onClick={() => setIsOpen(!isOpen)}>
+                <h3 className='collapse__title'>{props.title}</h3>
+                <FontAwesomeIcon icon={isOpen ? faAngleUp : faAngleDown} className='collapse__icon' />
+                <div className='collapse__content'>
+                    {props.content}
+                </div>
+            </button>
         </div>
-    );
-};
+    )
+}
 
 export default Collapse;

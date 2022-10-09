@@ -3,13 +3,15 @@ import Card from './Card';
 
 const Gallery = (props) => {
     return (
-        <div className='gallery container'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+        <div className='container'>
+            <div className='gallery'>
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </div>
         </div>
     );
 };
