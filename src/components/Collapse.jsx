@@ -11,10 +11,10 @@ const Collapse = (props) => {
             <button className='collapse container' onClick={() => setIsOpen(!isOpen)}>
                 <h3 className='collapse__title'>{props.title}</h3>
                 <FontAwesomeIcon icon={isOpen ? faAngleUp : faAngleDown} className='collapse__icon' />
-                <div className='collapse__content'>
-                    {props.content}
-                </div>
             </button>
+            <div className='collapse__content'>
+                {props.content}
+            </div>
         </div>
     )
 }
