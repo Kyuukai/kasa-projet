@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: flex-end;
     width: 30%;
-    height: 340px;
+    height: 20vw;
     background-color: #ff6060;
     border-radius: 10px;
     color: white;
@@ -13,5 +13,6 @@
     &__title {
         width: 40%;
         line-height: 1.8em;
+        font-size: 1.2rem;
     }
 }
