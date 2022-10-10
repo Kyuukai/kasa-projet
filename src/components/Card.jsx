@@ -7,7 +7,7 @@ const Card = ({ appartement }) => {
                 src={appartement.cover}
                 alt={appartement.title}
             />
-            {/* <h3 className='card__title'>{appartement.title}</h3> */}
+            {<h3 className='card__title'>{appartement.title}</h3>}
         </div>
     );
 };
