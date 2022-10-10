@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Card = (props) => {
+const Card = ({ appartement }) => {
     return (
         <div className='card'>
-            <h3 className='card__title'>Titre de la Location</h3>
+            <img
+                src={appartement.cover}
+                alt={appartement.title}
+            />
+            {/* <h3 className='card__title'>{appartement.title}</h3> */}
         </div>
     );
 };

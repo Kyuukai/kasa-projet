@@ -2,7 +2,8 @@ import React from 'react';
 
 const Accomodation = () => {
     return (
-        <div className="home__cards">
+        <div className="card__info">
+
         </div>
     );
 };

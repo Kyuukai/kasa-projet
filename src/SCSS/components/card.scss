@@ -1,18 +1,12 @@
 .card {
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    width: 30%;
-    height: 20vw;
-    background-color: #ff6060;
-    border-radius: 10px;
-    color: white;
-    bottom: 0;
-    padding: 20px;
+    flex-wrap: wrap;
 
-    &__title {
-        width: 40%;
-        line-height: 1.8em;
-        font-size: 1.2rem;
+    img {
+        width: 340px;
+        height: 340px;
+        filter: brightness(80%);
+        object-fit: cover;
+        border-radius: 10px;
     }
 }

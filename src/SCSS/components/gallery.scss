@@ -1,11 +1,14 @@
 .gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     background-color: #F6F6F6;
     border-radius: 25px;
-    padding: 56px;
-    gap: 50px;
     margin-bottom: 2.5rem;
+    padding: 50px;
+
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
 }
