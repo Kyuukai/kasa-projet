@@ -1,6 +1,10 @@
 .collapse {
     width: 60%;
 
+    @media screen and (min-width: 1400px) {
+        width: 40%;
+    }
+
     @media screen and (max-width: 600px) {
         width: 100%;
     }
