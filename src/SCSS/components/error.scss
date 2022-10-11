@@ -9,6 +9,10 @@
         h1 {
             font-size: 16rem;
             margin: 2rem;
+
+            @media screen and (max-width: 600px) {
+                font-size: 16vh;
+            }
         }
 
         p {
@@ -16,12 +20,22 @@
             font-weight: 500;
             text-align: center;
             margin: 2rem;
+
+            @media screen and (max-width: 600px) {
+                width: 60%;
+                font-size: 1.8vh;
+            }
         }
 
         a {
             font-size: 1.1rem;
             margin: 5rem;
             text-decoration: underline;
+
+            @media screen and (max-width: 600px) {
+                margin: 0%;
+                font-size: 1.8vh;
+            }
         }
     }
 }

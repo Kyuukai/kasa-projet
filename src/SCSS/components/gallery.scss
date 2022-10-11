@@ -4,11 +4,22 @@
     margin-bottom: 2.5rem;
     padding: 50px;
 
+    @media screen and (max-width: 600px) {
+        background-color: white;
+        border-radius: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
     &__card {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         gap: 60px;
+
+        @media screen and (max-width: 600px) {
+            gap: 0;
+        }
     }
 }

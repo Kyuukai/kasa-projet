@@ -1,12 +1,16 @@
 .collapse {
     width: 60%;
 
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+
     &__title {
         color: white;
     }
 
     &__icon {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: white;
     }
 
