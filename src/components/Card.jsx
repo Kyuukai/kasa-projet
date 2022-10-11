@@ -4,6 +4,7 @@ const Card = ({ appartement }) => {
     return (
         <div className='card'>
             <img
+                className='card__image'
                 src={appartement.cover}
                 alt={appartement.title}
             />
