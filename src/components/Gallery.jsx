@@ -14,8 +14,8 @@ const Gallery = () => {
     return (
         <div className='container'>
             <div className='gallery'>
-                <ul className='gallery__card'>{data.map((appartement, index) => (
-                    <Card key={index} appartement={appartement} />
+                <ul className='gallery__card'>{data.map((appartement) => (
+                    <Card key={appartement.id} appartement={appartement} />
                 ))}
                 </ul>
             </div>

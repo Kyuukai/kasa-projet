@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({ appartement }) => {
     return (
-        <a href={`/accomodation/${appartement.id}`} className='card'>
+        <a href="/accommodation" className='card'>
             <img
                 className='card__image'
                 src={appartement.cover}

@@ -1,6 +1,13 @@
 .card {
     display: flex;
     position: relative;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 
     @media screen and (max-width: 600px) {
         margin-bottom: 1.5rem;
@@ -12,6 +19,8 @@
         height: 340px;
         object-fit: cover;
         border-radius: 10px;
+        transition-duration: 0.5s;
+
 
         @media screen and (max-width: 600px) {
             width: 100%;
