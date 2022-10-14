@@ -18,7 +18,7 @@
         flex-direction: row;
         justify-content: space-between;
 
-        &__text {
+        &__info {
 
             &__title {
                 font-weight: bold;
@@ -38,22 +38,48 @@
                     font-size: 1.5vh;
                 }
             }
+
+            &__tags {
+                display: flex;
+                flex-direction: row;
+            }
         }
 
-        &__host {
+        &__misc {
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
 
-            &__hostName {
-                text-align: right;
-                width: 55%;
-                margin-top: 1rem;
+            @media screen and (max-width: 600px) {
+                flex-direction: column;
+                margin-bottom: 1rem;
             }
 
-            &__hostPicture {
-                width: 64px;
-                height: 64px;
-                border-radius: 35px;
+            &__host {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                &__hostName {
+                    text-align: right;
+                    margin-top: 1rem;
+                }
+
+                &__hostPicture {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 35px;
+                }
+            }
+
+            &__rating {
+
+                @media screen and (max-width: 600px) {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
             }
         }
     }
@@ -66,31 +92,6 @@
         @media screen and (max-width: 600px) {
             display: flex;
             flex-direction: column;
-        }
-    }
-
-    &__subheader {
-        display: flex;
-        justify-content: space-between;
-
-        @media screen and (max-width: 600px) {
-            flex-direction: column;
-            margin-bottom: 1rem;
-        }
-
-        &__tags {
-            display: flex;
-            flex-direction: row;
-        }
-
-        &__rating {
-
-            @media screen and (max-width: 600px) {
-                img {
-                    width: 20px;
-                    height: 20px;
-                }
-            }
         }
     }
 }

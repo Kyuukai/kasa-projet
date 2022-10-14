@@ -39,27 +39,27 @@ const Accommodation = () => {
                 alt={logement.title}
             />
             <div className="accommodation__header">
-                <div className="accommodation__header__text">
-                    <div className="accommodation__header__text__title">{logement.title}</div>
-                    <div className="accommodation__header__text__location">{logement.location}</div>
+                <div className="accommodation__header__info">
+                    <div className="accommodation__header__info__title">{logement.title}</div>
+                    <div className="accommodation__header__info__location">{logement.location}</div>
+                    <div className="accommodation__header__info__tags">
+                        {logement.tags.map((tag) => (
+                            <Tag key={logement.id + tag} tag={tag} />
+                        ))}
+                    </div>
                 </div>
-                <div className="accommodation__header__host">
-                    <div className="accommodation__header__host__hostName">{logement.host.name}</div>
-                    <img
-                        className="accommodation__header__host__hostPicture"
-                        src={logement.host.picture}
-                        alt={logement.host.name}
-                    />
-                </div>
-            </div>
-            <div className="accommodation__subheader">
-                <div className="accommodation__subheader__tags">
-                    {logement.tags.map((tag) => (
-                        <Tag key={logement.id + tag} tag={tag} />
-                    ))}
-                </div>
-                <div className="accommodation__subheader__rating">
-                    <Rating key={logement.id} rating={logement.rating} />
+                <div className="accommodation__header__misc">
+                    <div className="accommodation__header__misc__host">
+                        <div className="accommodation__header__misc__host__hostName">{logement.host.name}</div>
+                        <img
+                            className="accommodation__header__misc__host__hostPicture"
+                            src={logement.host.picture}
+                            alt={logement.host.name}
+                        />
+                    </div>
+                    <div className="accommodation__header__misc__rating">
+                        <Rating key={logement.id} rating={logement.rating} />
+                    </div>
                 </div>
             </div>
             <div className="accommodation__collapse">

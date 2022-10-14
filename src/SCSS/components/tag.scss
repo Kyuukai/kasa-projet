@@ -1,9 +1,12 @@
 .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ff6060;
-    padding: 5px 45px;
     border-radius: 10px;
     margin-bottom: 1rem;
     margin-right: 1rem;
+    padding: 5px 25px;
 
     @media screen and (max-width: 600px) {
         padding: 3px 20px;
