@@ -5,8 +5,17 @@
     margin-bottom: 1rem;
     margin-right: 1rem;
 
+    @media screen and (max-width: 600px) {
+        padding: 3px 20px;
+    }
+
     &__title {
         color: white;
         font-weight: 300;
+
+        @media screen and (max-width: 600px) {
+            font-size: 1.5vh;
+            text-align: center;
+        }
     }
 }
