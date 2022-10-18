@@ -6,12 +6,12 @@ const Carrousel = (props) => {
 
     const imgSize = () => {
 
-        const slideshowImg = document.querySelector(".carrousel__container__image");
+        const carrouselImg = document.querySelector(".carrousel__container__image");
 
-        if (!slideshowImg) {
+        if (!carrouselImg) {
             return 0;
         }
-        return slideshowImg.width;
+        return carrouselImg.width;
     }
 
     const Next = () => {
