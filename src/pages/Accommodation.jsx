@@ -4,10 +4,11 @@ import AccommodationCollapse from '../components/AccommodationCollapse';
 import Tag from '../components/Tag';
 import { useParams } from 'react-router-dom';
 import Rating from '../components/Rating';
+import Carrousel from '../components/Carrousel';
 
 const Accommodation = () => {
     const [logement, setLogement] = useState({
-        pictures: ["https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"],
+        pictures: [],
         title: "",
         location: "",
         host: ",",
@@ -33,11 +34,7 @@ const Accommodation = () => {
 
     return (
         <div className="accommodation container fh">
-            <img
-                className="accommodation__carrousel"
-                src={logement.pictures[0]}
-                alt={logement.title}
-            />
+            <Carrousel img={logement.pictures} />
             <div className="accommodation__header">
                 <div className="accommodation__header__info">
                     <div className="accommodation__header__info__title">{logement.title}</div>
