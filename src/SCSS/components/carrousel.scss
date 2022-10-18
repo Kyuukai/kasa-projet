@@ -12,7 +12,19 @@
 
     &__container {
         display: flex;
+        align-items: center;
+        height: 100%;
         transition: transform 1s ease;
+
+        &__image {
+            width: 100%;
+            display: flex;
+            flex-shrink: 0;
+
+            @media screen and (max-width: 600px) {
+                border-radius: 25px;
+            }
+        }
     }
 
     &__controls {
