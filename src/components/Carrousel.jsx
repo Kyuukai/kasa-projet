@@ -54,7 +54,7 @@ const Carrousel = (props) => {
                     src="../ARROW_RIGHT.png"
                     className="carrousel__controls__arrow"
                     onClick={Next}
-                    alt="Flèche de gauche"
+                    alt="Flèche de droite"
                 />
             </div>
 
